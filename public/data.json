@@ -1,0 +1,134 @@
+[
+     {
+          "id": 1,
+          "title": "The Alchemist",
+          "author": "Paulo Coelho",
+          "description": "A global phenomenon, The Alchemist tells the enchanting story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us about the essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams. This masterpiece explores the concept of a 'Personal Legend' and the idea that the entire universe conspires to help those who seek their true destiny.",
+          "category": "Story",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 25,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
+     },
+     {
+          "id": 2,
+          "title": "A Brief History of Time",
+          "author": "Stephen Hawking",
+          "description": "Stephen Hawking’s worldwide bestseller is a landmark volume in scientific writing. In this book, the legendary physicist explores the most profound questions of the universe: How did the universe begin? What made its start possible? Does time always flow forward? Is the universe unending—or are there boundaries? Are there other dimensions in space? What will happen when it all ends? Told in language we all can understand, A Brief History of Time plunges into the exotic realms of black holes and quarks, of antimatter and 'arrows of time,' of the big bang and a bigger God—where the possibilities are wondrous and unexpected.",
+          "category": "Science",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 10,
+          "image_url": "https://pictures.abebooks.com/isbn/9780593043165-us.jpg"
+     },
+     {
+          "id": 3,
+          "title": "Eloquent JavaScript",
+          "author": "Marijn Haverbeke",
+          "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications. This third edition of Eloquent JavaScript dives deep into the JavaScript language to show you how to write beautiful, effective code. It includes new features like class notation, arrow functions, iterators, async functions, template strings, and block scope. The book is structured as a guided tour that includes exercises and three substantial projects to help you practice what you've learned.",
+          "category": "Tech",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 15,
+          "image_url": "https://img.drz.lazcdn.com/g/kf/S0cbe7acdb46d4703bb78dacf764a84f4v.jpg_720x720q80.jpg"
+     },
+     {
+          "id": 4,
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "description": "No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results. If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals; you fall to the level of your systems.",
+          "category": "Story",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 40,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg"
+     },
+     {
+          "id": 5,
+          "title": "The Selfish Gene",
+          "author": "Richard Dawkins",
+          "description": "Inheriting the mantle of revolutionary biology from Charles Darwin, Richard Dawkins' The Selfish Gene caused a storm when it was first published. It shifted the focus of evolution from the individual organism to the gene itself. This imaginative, powerful, and stylistically brilliant work explains how genes use organisms to ensure their own survival. Dawkins' concept of the 'meme'—the cultural equivalent of a gene—was also introduced in this book, changing how we think about the transmission of ideas. It remains a classic of scientific literature that forces us to reconsider the fundamental nature of life, altruism, and human behavior.",
+          "category": "Science",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 8,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/71Y8vsc9VqL.jpg"
+     },
+     {
+          "id": 6,
+          "title": "Clean Code",
+          "author": "Robert C. Martin",
+          "description": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. This book is divided into three parts. The first describes the principles, patterns, and practices of writing clean code. The second consists of several case studies of increasing complexity. The third part is the payoff: a list of heuristics and 'smells' accumulated while creating the case studies.",
+          "category": "Tech",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 12,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41xShlnTZTL.jpg"
+     },
+     {
+          "id": 7,
+          "title": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "description": "Compassionate, dramatic, and deeply moving, To Kill a Mockingbird takes readers to the roots of human behavior—to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature. It explores the moral nature of human beings—specifically, the coexistence of good and evil—within a racially divided community in the Deep South.",
+          "category": "Story",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 18,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/81gepf1eMqL.jpg"
+     },
+     {
+          "id": 8,
+          "title": "The Gene: An Intimate History",
+          "author": "Siddhartha Mukherjee",
+          "description": "From the Pulitzer Prize-winning, bestselling author of The Emperor of All Maladies, Siddhartha Mukherjee comes the story of the quest to decipher the master-code of instructions that makes and defines humans. This book weaves together the history of genetic discovery with the story of Mukherjee's own family and their recurring struggle with mental illness. It is a sweeping journey that takes us from Aristotle's theories to Gregor Mendel's pea plants, through the dark era of eugenics, to the modern breakthrough of gene sequencing and the ethical dilemmas posed by the ability to 'write' our own genetic future.",
+          "category": "Science",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 6,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/81-0fN70BBL.jpg"
+     },
+     {
+          "id": 9,
+          "title": "You Don't Know JS Yet",
+          "author": "Kyle Simpson",
+          "description": "The You Don't Know JS series is a deep dive into the mechanics of the JavaScript language. This specific volume focuses on the core foundations of the language, challenging the 'shortcuts' many developers take. Kyle Simpson argues that even experienced developers often only have a surface-level understanding of how JS actually works under the hood. By exploring scopes, closures, and the 'this' keyword with surgical precision, this book aims to turn 'JS coders' into 'JS engineers.' It is widely regarded as one of the best resources for mastering the tricky parts of the language that cause the most bugs in production.",
+          "category": "Tech",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 20,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41Yn+pAs8qL.jpg"
+     },
+     {
+          "id": 10,
+          "title": "The Great Gatsby",
+          "author": "F. Scott Fitzgerald",
+          "description": "Set in the Jazz Age on Long Island, the novel depicts narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan. A classic of 20th-century literature, The Great Gatsby is an exquisitely crafted tale of 1920s America. The book is a critique of the 'American Dream' and explores themes of social stratification, excess, and the struggle between the past and the future. Gatsby’s lavish parties are legendary, but the loneliness and tragedy lurking beneath the surface make this one of the most poignant novels ever written.",
+          "category": "Story",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 14,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/81af+MCjtFL.jpg"
+     },
+     {
+          "id": 11,
+          "title": "Cosmos",
+          "author": "Carl Sagan",
+          "description": "Cosmos is one of the bestselling science books of all time. In clear-eyed prose, Carl Sagan reveals a jewel-like blue world inhabited by a life form that is just beginning to discover its own identity and to venture into the vast ocean of space. With a new introduction by Sagan’s collaborator, Ann Druyan, and a foreword by Neil deGrasse Tyson, Cosmos retraces the fourteen billion years of cosmic evolution that have transformed matter into consciousness, exploring such topics as the origin of life, the human brain, Egyptian hieroglyphics, spacecraft missions, the death of the Sun, the evolution of galaxies, and the forces and individuals who helped to shape modern science.",
+          "category": "Science",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 9,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/91N99W-FfXL.jpg"
+     },
+     {
+          "id": 12,
+          "title": "The Pragmatic Programmer",
+          "author": "Andrew Hunt",
+          "description": "The Pragmatic Programmer is one of those rare tech books that remains relevant decades after its publication. It doesn't focus on a specific language, but rather on the philosophy of software development. It examines what it means to be a modern programmer, covering topics ranging from personal responsibility and career development to architectural techniques for keeping your code flexible and easy to adapt and reuse. This 20th Anniversary Edition includes new sections on the rise of agile, testing, and concurrency. It is a collection of tips and anecdotes that will help you think better about your craft and build better software, regardless of the tools you use.",
+          "category": "Tech",
+          "rating": 4.8,
+          "reviews_count": "2.3k",
+          "available_quantity": 11,
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41HInDRp0ZL.jpg"
+     }
+]
