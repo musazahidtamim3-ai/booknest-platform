@@ -4,7 +4,7 @@ import "./globals.css";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["500", "600", "700"]
+  weight: ["400", "600", "700"]
 });
 
 

@@ -9,13 +9,13 @@ const MaequeePage = () => {
 
                <p className="btn bg-blue-950 rounded-full border-none shadow-none w-40 flex gap-2 text-yellow-500 items-center"><PiShootingStarFill /> New Arrivals:</p>
                <Marquee pauseOnHover='true'>
-                    <p className="text-white flex gap-5 pr-5 ">The Silent Echo</p>
+                    <p className="text-white flex gap-5 pr-5 ">The Alchemist</p>
                     <div className="bg-white h-4 w-0.5 mr-5"></div>
-                    <p className="text-white flex gap-5 pr-5">Quantum Horizon</p>
+                    <p className="text-white flex gap-5 pr-5">A Brief History of Time</p>
                     <div className="bg-white h-4 w-0.5 mr-5"></div>
-                    <p className="text-white flex gap-5 pr-5">Beyond the Nebula</p>
+                    <p className="text-white flex gap-5 pr-5">Eloquent JavaScript</p>
                     <div className="bg-white h-4 w-0.5 mr-5"></div>
-                    <p className="text-white flex gap-5 pr-5">The Alchemist's Shadow</p>
+                    <p className="text-white flex gap-5 pr-5">To Kill a Mockingbird</p>
                     <div className="bg-white h-4 w-0.5 mr-5"></div>
                </Marquee>
                <p className="btn flex gap-2 bg-blue-950 rounded-full border-none shadow-none text-yellow-500 items-center">special Discount on Memberships-<span className="flex items-center gap-2 text-lg">30% Off! <BiSolidParty /></span></p>

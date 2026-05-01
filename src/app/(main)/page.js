@@ -8,8 +8,6 @@ import PopularPage from "../components/pages/Popular";
 
 
 export default async function Home() {
-  
-  
   return (
     <div>
       <div>

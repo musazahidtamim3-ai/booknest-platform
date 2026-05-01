@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaArrowRight, FaBook, FaStar } from 'react-icons/fa';
 
@@ -23,7 +24,7 @@ const Featured = async() => {
                                         <p className='text-yellow-500 flex gap-1 items-center'><FaStar className='pb-1'/> {book.rating}</p>
                                         <p className='text-gray-400'>( {book.reviews_count} )</p>
                                    </div>
-                                   <button className='btn w-full bg-[#464fE5] text-white mt-5 hover:scale-102 hover:bg-white hover:text-[#464FE5] hover:border hover:border-[#464FE5]'>View Details <FaArrowRight></FaArrowRight> </button>
+                                   <Link href={`/books/${book.id}`}><button className='btn w-full bg-[#464fE5] text-white mt-5 hover:scale-102 hover:bg-white hover:text-[#464FE5] hover:border hover:border-[#464FE5]'>View Details <FaArrowRight></FaArrowRight> </button></Link>
                               </div>
                          ))
                     }

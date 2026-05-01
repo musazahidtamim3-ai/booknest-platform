@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaGithub, FaGoogle, FaMailBulk } from 'react-icons/fa';
 
@@ -26,7 +27,7 @@ const LoginPage = () => {
                               <FaGithub/>
                               Login with GitHub
                          </button>
-                         <p className='text-blue-500 flex gap-3 justify-center pt-3'>Forgot password ? <span className='text-red-500'>Register</span> </p>
+                         <p className='text-blue-500 flex gap-3 justify-center pt-3'>Forgot password ? <Link href={'/register'}><span className='text-red-500'>Register</span></Link> </p>
                </fieldset>
                </form>
           </div>

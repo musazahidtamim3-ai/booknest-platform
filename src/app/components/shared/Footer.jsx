@@ -53,7 +53,7 @@ const Footer = () => {
                          <div>
                               <h1 className='text-white text-2xl'>Contact Us</h1>
                               <div className='flex flex-col space-y-3 gap-1 mt-3 text-white/70'>
-                                   <p className='flex items-center gap-3'><FaLocationDot/> 123 Library Street, Knowledge City, Dhaka, Bangladesh </p>
+                                   <p className='flex items-start gap-3'><FaLocationDot className='mt-1'/> 123 Library Street, Knowledge City, Dhaka, Bangladesh </p>
                                    <p className='flex items-center gap-3'><MdMail/> support@booknest.com</p>
                                    <p className='flex items-center gap-3'><PiPhoneCallFill/> +880 1234-567890</p>
                               </div>
