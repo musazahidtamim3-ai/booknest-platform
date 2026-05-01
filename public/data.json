@@ -52,7 +52,7 @@
           "rating": 4.8,
           "reviews_count": "2.3k",
           "available_quantity": 8,
-          "image_url": "https://images-na.ssl-images-amazon.com/images/I/71Y8vsc9VqL.jpg"
+          "image_url": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/00fa9ac33_170152.jpg"
      },
      {
           "id": 6,
@@ -85,7 +85,7 @@
           "rating": 4.8,
           "reviews_count": "2.3k",
           "available_quantity": 6,
-          "image_url": "https://images-na.ssl-images-amazon.com/images/I/81-0fN70BBL.jpg"
+          "image_url": "https://static-01.daraz.com.bd/p/02c1255d1bddc495e8f087f8079ffee1.jpg"
      },
      {
           "id": 9,
@@ -96,7 +96,7 @@
           "rating": 4.8,
           "reviews_count": "2.3k",
           "available_quantity": 20,
-          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41Yn+pAs8qL.jpg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbh7YHv35M2gkuUX0aU5AJQRJY9ngMgYgYQ&s"
      },
      {
           "id": 10,
@@ -107,7 +107,7 @@
           "rating": 4.8,
           "reviews_count": "2.3k",
           "available_quantity": 14,
-          "image_url": "https://images-na.ssl-images-amazon.com/images/I/81af+MCjtFL.jpg"
+          "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1650033243i/41733839.jpg"
      },
      {
           "id": 11,
@@ -118,7 +118,7 @@
           "rating": 4.8,
           "reviews_count": "2.3k",
           "available_quantity": 9,
-          "image_url": "https://images-na.ssl-images-amazon.com/images/I/91N99W-FfXL.jpg"
+          "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1388620656i/55030.jpg"
      },
      {
           "id": 12,
@@ -129,6 +129,6 @@
           "rating": 4.8,
           "reviews_count": "2.3k",
           "available_quantity": 11,
-          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41HInDRp0ZL.jpg"
+          "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1401432508i/4099.jpg"
      }
 ]

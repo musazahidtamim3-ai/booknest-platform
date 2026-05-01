@@ -12,7 +12,7 @@ const Navbar = () => {
                          <FaHome />
                          <h1>Home</h1>
                     </div></Link>
-                    <Link href={'/'}><div className='flex items-center gap-2'>
+                    <Link href={'/allBooks'}><div className='flex items-center gap-2'>
                          <FaBorderAll />
                          <h1>All Books</h1>
                     </div></Link>
