@@ -22,7 +22,7 @@ const AllBooks = ({ books }) => {
 
      return (
           <div>
-                    <label className="input mt-10 mb-5 w-full">
+                    <label className="input mt-5 lg:mt-10 mb-3 lg:mb-5 w-full">
                          <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                               <g
                                    strokeLinejoin="round"
@@ -36,21 +36,21 @@ const AllBooks = ({ books }) => {
                          </svg>
                          <input onChange={(e) => setSearchValue(e.target.value)} type="search" required placeholder="Search books by title..." />
                     </label>
-               <div className='grid grid-cols-12 gap-5'>
-                    <div className='col-span-3 flex flex-col mt-3'>
+               <div className='grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-5'>
+                    <div className='col-span-3 flex flex-row gap-3 md:gap-0 justify-center lg:justify-start lg:flex-col mt-3'>
                          <button onClick={()=>setActive('all')} className={` mt-3 ${active === "all" ? 'btn btn-primary' : 'btn'}`}>All</button>
                          <button onClick={()=>setActive('story')} className={` mt-3 ${active === "story" ? 'btn btn-primary' : 'btn'}`}>Stories</button>
                          <button onClick={()=>setActive('science')} className={` mt-3 ${active === "science" ? 'btn btn-primary' : 'btn'}`}>Science</button>
-                         <button onClick={()=>setActive('tech')} className={` mt-3 ${active === "tech" ? 'btn btn-primary' : 'btn'}`}>Technologies</button>
+                         <button onClick={() => setActive('tech')} className={` mt-3 ${active === "tech" ? 'btn btn-primary' : 'btn'}`}>Technologies</button>
                     </div>
-                    <div className='grid grid-cols-3 gap-5 col-span-9'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:col-span-9'>
                          {
                               displayedBooks.length>0? (displayedBooks.map(book => (
-                                   <div key={book.id} className='bg-white border border-gray-200 shadow-md p-5 my-5 rounded-md'>
+                                   <div key={book.id} className='bg-white border border-gray-200 shadow-md p-5 rounded-md'>
                                         <div className='bg-gray-100 h-40 flex justify-center items-center'>
                                              <Image height={100} width={100} className='h-30 object-contain rounded-lg' src={book.image_url} alt=''></Image>
                                         </div>
-                                        <h1 className='text-xl pt-5 flex-1'>{book.title}</h1>
+                                        <h1 className='text-xl pt-5'>{book.title}</h1>
                                         <p className='text-sm text-gray-400'>{book.author}</p>
                                         <p className={`badge ${book.category === "Story" ? 'bg-red-50 text-red-500 border-red-500' : book.category === 'Tech' ? 'bg-purple-50 text-purple-500 border-purple-500' : 'bg-green-50 text-green-500 border-green-500'} rounded-full my-2`}>{book.category}</p>
                                         <div className='flex gap-2 items-center'>

@@ -9,7 +9,7 @@ const AllBooksPage = async() => {
 
      
      return (
-          <div className='max-w-7xl mx-auto my-10'>
+          <div className='max-w-7xl mx-auto my-10 px-5 lg:px-0'>
                <div className='text-center'>
                     <h1 className='text-3xl font-semibold pt-3'>All Books</h1>
                     <p className='text-gray-500'>Browse our collections of amazing books</p>

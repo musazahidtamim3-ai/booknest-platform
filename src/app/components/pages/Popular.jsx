@@ -6,10 +6,10 @@ import { RiChatHistoryFill } from 'react-icons/ri';
 
 const PopularPage = () => {
      return (
-          <div className='max-w-7xl mx-auto my-10'>
+          <div className='max-w-7xl mx-auto my-10 px-5 lg:px-0'>
                <h1 className='text-[#4F46E5] flex items-center gap-2'> Popular Categories</h1>
                <h1 className='text-3xl font-semibold pt-3'>Explore Books by Categories</h1>
-               <div className='grid grid-cols-3 gap-5 my-5'>
+               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-5'>
                     <div className='h-50 relative rounded-md'>
                          <Image height={20} width={500} className='w-full h-full rounded-md acsolute inset-0' src='/science.jpg' alt=''></Image>
                          <div className='bg-black/50 rounded-md absolute inset-0'></div>

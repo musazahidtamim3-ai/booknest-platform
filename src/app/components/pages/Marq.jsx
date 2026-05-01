@@ -5,20 +5,22 @@ import { PiShootingStarFill } from 'react-icons/pi';
 
 const MaequeePage = () => {
      return (
-          <div className="bg-blue-950 py-2 px-3 max-w-7xl mx-auto my-5 rounded-full flex gap-1 ">
+          <div className='px-5 lg:px-0'>
+               <div className="bg-blue-950 py-2 px-1 lg:px-3 max-w-7xl mx-auto my-5 rounded-full flex gap-1 ">
 
-               <p className="btn bg-blue-950 rounded-full border-none shadow-none w-40 flex gap-2 text-yellow-500 items-center"><PiShootingStarFill /> New Arrivals:</p>
-               <Marquee pauseOnHover='true'>
-                    <p className="text-white flex gap-5 pr-5 ">The Alchemist</p>
-                    <div className="bg-white h-4 w-0.5 mr-5"></div>
-                    <p className="text-white flex gap-5 pr-5">A Brief History of Time</p>
-                    <div className="bg-white h-4 w-0.5 mr-5"></div>
-                    <p className="text-white flex gap-5 pr-5">Eloquent JavaScript</p>
-                    <div className="bg-white h-4 w-0.5 mr-5"></div>
-                    <p className="text-white flex gap-5 pr-5">To Kill a Mockingbird</p>
-                    <div className="bg-white h-4 w-0.5 mr-5"></div>
-               </Marquee>
-               <p className="btn flex gap-2 bg-blue-950 rounded-full border-none shadow-none text-yellow-500 items-center">special Discount on Memberships-<span className="flex items-center gap-2 text-lg">30% Off! <BiSolidParty /></span></p>
+                    <p className="btn bg-blue-950 rounded-full border-none shadow-none w-40 flex gap-2 text-yellow-500 items-center"><PiShootingStarFill /> New Arrivals:</p>
+                    <Marquee pauseOnHover='true'>
+                         <p className="text-white flex gap-5 pr-5 ">The Alchemist</p>
+                         <div className="bg-white h-4 w-0.5 mr-5"></div>
+                         <p className="text-white flex gap-5 pr-5">A Brief History of Time</p>
+                         <div className="bg-white h-4 w-0.5 mr-5"></div>
+                         <p className="text-white flex gap-5 pr-5">Eloquent JavaScript</p>
+                         <div className="bg-white h-4 w-0.5 mr-5"></div>
+                         <p className="text-white flex gap-5 pr-5">To Kill a Mockingbird</p>
+                         <div className="bg-white h-4 w-0.5 mr-5"></div>
+                    </Marquee>
+                    <p className="btn hidden lg:flex gap-2 bg-blue-950 rounded-full border-none shadow-none text-yellow-500 items-center">special Discount on Memberships-<span className="flex items-center gap-2 text-lg">30% Off! <BiSolidParty /></span></p>
+               </div>
           </div>
      );
 };

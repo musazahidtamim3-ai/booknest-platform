@@ -7,10 +7,10 @@ const Featured = async() => {
      const res = await fetch('http://localhost:3000/data.json')
      const books = await res.json()
      return (
-          <div className='max-w-7xl mx-auto my-10'>
+          <div className='max-w-7xl mx-auto my-10 px-5 lg:px-0'>
                <h1 className='text-[#4F46E5] flex items-center gap-2'><FaBook></FaBook> Featured Books</h1> 
                <h1 className='text-3xl font-semibold pt-3'>Top Picks for You</h1>
-               <div className='grid grid-cols-4 gap-5'>
+               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 lg:gap-5'>
                     {
                          books.slice(0,4).map(book => (
                               <div key={book.id} className='bg-white border border-gray-200 shadow-md p-5 my-5 rounded-md'>

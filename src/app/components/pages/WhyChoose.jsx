@@ -6,10 +6,10 @@ import { FaMobileScreenButton } from 'react-icons/fa6';
 
 const WhyChoosePage = () => {
      return (
-          <div className='max-w-7xl mx-auto my-10'>
+          <div className='max-w-7xl mx-auto my-10 px-5 lg:px-0'>
                <h1 className='text-[#4F46E5] flex items-center gap-2'>Why Choose Booknest</h1>
                <h1 className='text-3xl font-semibold pt-3'>Your Reading Journey, Simplified</h1>
-               <div className='grid grid-cols-4 gap-5 my-5'>
+               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-5'>
                     <div className="flex items-center gap-6 bg-white border border-gray-200 shadow-md p-3 rounded-md">
                          <div className='bg-purple-100 rounded-full p-4'>
                               <BsCollectionFill className='text-purple-600 w-6 h-6'/>

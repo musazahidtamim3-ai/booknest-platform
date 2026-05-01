@@ -9,8 +9,8 @@ import { PiPhoneCallFill } from 'react-icons/pi';
 const Footer = () => {
      return (
           <div className='bg-blue-950 py-10'>
-               <div className='max-w-7xl mx-auto'>
-                    <div className='grid grid-cols-4 gap-5'>
+               <div className='max-w-7xl mx-auto px-5 lg:px-0'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                          <div>
                               <Image height={300} width={2000} className='h-8 w-38' src='/booknest-01.png' alt=''></Image>
                               <p className='text-white/70 pt-5'>BookNest is your digital library companion. Discover, borrow and enjoy books like never before.</p>
@@ -60,7 +60,7 @@ const Footer = () => {
                          </div>
                     </div>
                     <hr className='border border-white/10 my-5' />
-                    <div className='flex justify-between text-white/70'>
+                    <div className='flex flex-col md:flex-row justify-between text-white/70'>
                          <p>&copy; 2026 BookNest. all rights reserved.</p>
                          <div className='flex items-center gap-5'>
                               <p>Privacy Policy</p>
