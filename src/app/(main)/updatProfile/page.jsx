@@ -11,7 +11,7 @@ import { RiErrorWarningFill } from "react-icons/ri";
 import { TiTick } from "react-icons/ti";
 
 
-const MyProfile = () => {
+const UpdateProfilePage = () => {
      const { data: session, isPending } = useSession();
      const user = session?.user;
      // const { id, createdAt, updatedAt, email, emailVerified, name, image } = user;
@@ -95,4 +95,4 @@ const MyProfile = () => {
      );
 };
 
-export default MyProfile;
+export default UpdateProfilePage;

@@ -9,7 +9,6 @@ import { authClient, useSession } from '@/lib/auth-client';
 const Navbar = () => {
      const { data: session, isPending } = useSession()
      const user = session?.user;
-     console.log("User Data:", user);
 
      const handleLogout = async () => {
           await authClient.signOut({
@@ -43,7 +42,7 @@ const Navbar = () => {
                     isPending ? <p>User is loading...</p> : user ?
                          <div className='flex items-center gap-5'>
                               <div className='flex items-center gap-3'>
-                                   <Image className='rounded-full' height={30} width={30} src={user.image || '/user.png'} alt=''></Image>
+                                   <Image className='rounded-full object-cover' height={30} width={30} src={user.image || '/user.png'} alt=''></Image>
                                    <div>
                                         <h1>Hello ! {user.name}</h1>
                                    </div>
