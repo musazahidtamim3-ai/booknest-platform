@@ -5,6 +5,7 @@ import Marq from '../components/pages/Marq'
 import Featured from "../components/pages/Featured";
 import WhyChoosePage from "../components/pages/WhyChoose";
 import PopularPage from "../components/pages/Popular";
+import Link from "next/link";
 
 
 export default async function Home() {
@@ -20,7 +21,7 @@ export default async function Home() {
           </div>
           <h1 className="text-2xl lg:text-7xl pt-5 font-bold">Find Your <span className="bg-linear-to-r from-[#4F46E5] to-[#9b46e5] bg-clip-text text-transparent">Next</span> Read</h1>
           <p className=" text-sm md:text-md pt-3 max-w-140 text-white/80">Explore thousands of books, borrow your favorites, and embark on a journey of knowledge. Join a thriving community of lifelong learners and curious minds. </p>
-          <button className="btn mt-5 bg-[#4F46E5] text-white border-none shadow-none">Explore Books <FaArrowRight /> </button>
+          <Link href={'/allBooks'} className="btn mt-5 bg-[#4F46E5] text-white border-none shadow-none">Explore Books <FaArrowRight /> </Link>
         </div>
       </div>
       <Marq></Marq>

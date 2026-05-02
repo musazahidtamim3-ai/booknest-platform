@@ -37,7 +37,7 @@ const AllBooks = ({ books }) => {
                          <input onChange={(e) => setSearchValue(e.target.value)} type="search" required placeholder="Search books by title..." />
                     </label>
                <div className='grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-5'>
-                    <div className='col-span-3 flex flex-row gap-3 md:gap-0 justify-center lg:justify-start lg:flex-col mt-3'>
+                    <div className='col-span-3 flex flex-row gap-3 md:gap-0 justify-center lg:justify-start lg:flex-col mt-3 mb-5 lg:mb-0'>
                          <button onClick={()=>setActive('all')} className={` mt-3 ${active === "all" ? 'btn btn-primary' : 'btn'}`}>All</button>
                          <button onClick={()=>setActive('story')} className={` mt-3 ${active === "story" ? 'btn btn-primary' : 'btn'}`}>Stories</button>
                          <button onClick={()=>setActive('science')} className={` mt-3 ${active === "science" ? 'btn btn-primary' : 'btn'}`}>Science</button>

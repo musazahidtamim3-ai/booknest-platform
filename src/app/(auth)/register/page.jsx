@@ -25,10 +25,10 @@ const registerPage = () => {
      }
      return (
           <div>
-               <div className='flex items-center justify-center min-h-screen'>
+               <div className='flex items-center justify-center min-h-screen px-5 lg:px-0'>
                     <form onSubmit={handleSubmit(registerFunc)}>
 
-                         <fieldset className="fieldset bg-base-100 border-base-300 rounded-box border p-10 w-xl shadow-md">
+                         <fieldset className="fieldset bg-base-100 border-base-300 rounded-box border p-10 w-sm lg:w-xl shadow-md">
                               <h1 className='text-3xl text-center'>Welcome Back!</h1>
                               <p className='text-[13px] max-w-90 text-center mx-auto text-gray-400 pb-5'>Create your account and meet a important library of books</p>
 

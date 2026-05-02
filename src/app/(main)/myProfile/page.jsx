@@ -19,10 +19,14 @@ const MyProfile = () => {
           return <div className="flex justify-center items-center h-[70vh]">User Loading ...</div>
      }
      if (!user) {
-          return <div>Please login</div>
+          return <div className="flex flex-col justify-center items-center my-10">
+               <Image height={1000} width={1000} className=' h-100 w-150' src={'/lock.png'} alt=''></Image>
+               <h1 className="text-3xl py-2 font-semibold">Please login to continue</h1>
+               <p className="text-gray-400">You need to login to access and manage your profile Information</p>
+          </div>
      }
      return (
-          <div className="max-w-7xl mx-auto my-10">
+          <div className="max-w-7xl mx-auto my-10 px-5 lg:px-0">
                <div className="flex justify-between items-center mb-3">
                     <div>
                          <h1 className="text-2xl font-bold pb-1">My Profile</h1>
@@ -34,9 +38,9 @@ const MyProfile = () => {
                <div className="bg-white border border-blue-200 shadow-md rounded-md p-10">
                     
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-                         <div className="pt-5 col-span-7 flex items-center gap-10">
-                              <Image height={200} width={200} className='border-5 border-blue-500 rounded-full h-50 w-50' src={user?.image || '/user.png'} alt=''></Image>
-                              <div>
+                         <div className="pt-5 col-span-7 flex flex-col md:flex-row  items-center gap-10">
+                              <Image height={200} width={200} className='border-5 border-blue-500 rounded-full h-40 md:h-50 w-40 md:w-50' src={user?.image || '/user.png'} alt=''></Image>
+                              <div className="text-center md:text-left">
                                    <h1 className="text-2xl font-bold pb-1">{user?.
                                         name}</h1>
                                    <p className="text-blue-500 text-lg font-semibold">Book Lover</p>
