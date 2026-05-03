@@ -3,7 +3,7 @@ import AllBooks from '@/app/components/pages/AllBooks';
 import React from 'react';
 
 const AllBooksPage = async() => {
-     const res = await fetch('http://localhost:3000/data.json')
+     const res = await fetch('https://booknest-platform.vercel.app/data.json')
      const books = await res.json()
 
 

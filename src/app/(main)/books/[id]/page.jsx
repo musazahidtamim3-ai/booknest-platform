@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const bookDetailsPage = async({ params }) => {
      const {id} = await params
-     const res = await fetch(`http://localhost:3000/data.json`)
+     const res = await fetch(`https://booknest-platform.vercel.app/data.json`)
      const books = await res.json()
      const book = books.find(b => b.id.toString() === id)
      console.log(book)

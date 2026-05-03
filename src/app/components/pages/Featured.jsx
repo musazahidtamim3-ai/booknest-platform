@@ -4,7 +4,7 @@ import React from 'react';
 import { FaArrowRight, FaBook, FaStar } from 'react-icons/fa';
 
 const Featured = async() => {
-     const res = await fetch('http://localhost:3000/data.json')
+     const res = await fetch('https://booknest-platform.vercel.app/data.json')
      const books = await res.json()
      return (
           <div className='max-w-7xl mx-auto my-10 px-5 lg:px-0'>
