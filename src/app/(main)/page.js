@@ -13,7 +13,7 @@ export default async function Home() {
     <div>
       <div>
         <div className="relative">
-          <Image height={100} width={3000} className='w-full min-h-100 lg:h-150 object-cover' src='/dark.png' alt=''></Image>
+          <Image height={100} width={3000} className='w-full min-h-150 lg:h-150 object-cover' src='/dark.png' alt=''></Image>
         </div>
         <div className="absolute text-white top-1/3 left-5 lg:left-16">
           <div>
