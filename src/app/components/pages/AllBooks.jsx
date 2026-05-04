@@ -46,7 +46,7 @@ const AllBooks = ({ books }) => {
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:col-span-9'>
                          {
                               displayedBooks.length>0? (displayedBooks.map(book => (
-                                   <div key={book.id} className='bg-white border border-gray-200 shadow-md p-5 rounded-md'>
+                                   <div key={book.id} className='bg-white border border-gray-200 shadow-md p-5 rounded-md hover:scale-102'>
                                         <div className='bg-gray-100 h-40 flex justify-center items-center'>
                                              <Image height={100} width={100} className='h-30 object-contain rounded-lg' src={book.image_url} alt=''></Image>
                                         </div>

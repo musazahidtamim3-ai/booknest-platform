@@ -7,7 +7,7 @@ const NavLink = ({ href, children }) => {
      const path = usePathname();
      const active = href===path
      return (
-          <Link className={`${active ? "bg-[#464FE5] px-5 py-2 rounded-md text-white" : ""}`} href={href}>
+          <Link className={`${active ? "bg-blue-100 lg:px-5 lg:py-2 rounded-md text-blue-700 border-l-5 border-blue-500 lg:border-none" : ""}`} href={href}>
                {children}
                </Link>
      );

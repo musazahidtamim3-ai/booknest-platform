@@ -1,6 +1,6 @@
 
 import AllBooks from '@/app/components/pages/AllBooks';
-import React from 'react';
+import "animate.css"
 
 const AllBooksPage = async() => {
      const res = await fetch('https://booknest-platform.vercel.app/data.json')
@@ -10,7 +10,7 @@ const AllBooksPage = async() => {
      
      return (
           <div className='max-w-7xl mx-auto my-10 px-5 lg:px-0'>
-               <div className='text-center'>
+               <div className='text-center animate__animated animate__fadeInDown'>
                     <h1 className='text-3xl font-semibold pt-3'>All Books</h1>
                     <p className='text-gray-500'>Browse our collections of amazing books</p>
                </div>

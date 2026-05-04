@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaArrowRight, FaBook, FaStar } from 'react-icons/fa';
+import "animate.css"
 
 const Featured = async() => {
      const res = await fetch('https://booknest-platform.vercel.app/data.json')
@@ -13,7 +14,7 @@ const Featured = async() => {
                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 lg:gap-5'>
                     {
                          books.slice(0,4).map(book => (
-                              <div key={book.id} className='bg-white border border-gray-200 shadow-md p-5 my-5 rounded-md'>
+                              <div key={book.id} className='bg-white border border-gray-200 shadow-md p-5 my-5 rounded-md animate__animated animate__fadeInUp hover:scale-102'>
                                    <div className='bg-gray-100 h-40 flex justify-center items-center'>
                                         <Image height={100} width={100} className='h-30 object-contain rounded-lg' src={book.image_url} alt=''></Image>
                                    </div>

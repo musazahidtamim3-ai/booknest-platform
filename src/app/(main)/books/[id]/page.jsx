@@ -1,8 +1,5 @@
 import Borrow from '@/app/components/pages/Borrow';
 import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { toast } from 'react-toastify';
 
 const bookDetailsPage = async({ params }) => {
      const {id} = await params

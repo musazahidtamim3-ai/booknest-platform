@@ -3,8 +3,9 @@ import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { FaGithub, FaGoogle } from 'react-icons/fa';
+import { FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
+import "animate.css"
 
 const LoginPage = () => {
      const { register, handleSubmit, formState: { errors } } = useForm()
@@ -13,11 +14,7 @@ const LoginPage = () => {
                provider: "google",
           });
      }
-     const githubSignIn = async () => {
-          const data = await authClient.signIn.social({
-               provider: "github"
-          })
-     }
+     
      const handleLogin = async (data) => {
           const { email, password } = data
           const { data: res, error } = await authClient.signIn.email({
@@ -33,7 +30,7 @@ const LoginPage = () => {
           }
      }
      return (
-          <div className='flex items-center justify-center min-h-screen px-5 '>
+          <div className='flex items-center justify-center min-h-screen px-5 animate__animated animate__fadeInDown'>
                <form onSubmit={handleSubmit(handleLogin)}>
 
                     <fieldset className="fieldset bg-base-100 border-base-300 rounded-box border px-10 py-5 w-sm lg:w-xl shadow-md">
@@ -54,10 +51,7 @@ const LoginPage = () => {
                               <FaGoogle />
                               Login with Google
                          </button>
-                         <button type='button' onClick={githubSignIn} className="btn mt-2 flex gap-3 bg-black text-white border-black">
-                              <FaGithub />
-                              Login with GitHub
-                         </button>
+                         
                          <p className='text-blue-500 flex gap-3 justify-center pt-3'>Forgot password ? <Link href={'/register'}><span className='text-red-500'>Register</span></Link> </p>
                     </fieldset>
                </form>

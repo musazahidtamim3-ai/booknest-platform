@@ -25,27 +25,40 @@ const Navbar = () => {
 
      };
      return (
-          <div className='flex sticky z-50 bg-white/90 top-0 items-center justify-start md:justify-between gap-5 md:gap-2 py-5 px-5 lg:px-16 shadow-sm'>
+          <div className='flex sticky z-50 bg-white top-0 items-center justify-start md:justify-between gap-5 md:gap-2 py-5 px-5 lg:px-16 shadow-sm'>
                <div className='text-blue-500 flex md:hidden' onClick={()=>setOpen(!open)}>
                     {
                          open===false ? <GrTextAlignLeft/> : <IoMdCloseCircleOutline />
                     }
                </div>
-               <div className={`flex flex-col bg-base-100 p-5 border border-gray-200 shadow-md rounded-md md:hidden absolute  duration-1000 gap-5 ${open ? 'top-15 left-5' : '-top-70 left-5'}`}>
-                    <NavLink href={'/'}><div className='flex items-center gap-2'>
+               <div className={`flex flex-col w-90% bg-base-100 p-5 border border-gray-200 shadow-md rounded-md md:hidden absolute  duration-1000 gap-3 ${open ? 'top-20 left-5 right-5' : '-top-100 left-5 right-5'}`}>
+                    {
+                         isPending ? <p>User is loading...</p> : user ?
+                              <div className='flex items-center gap-5 pb-3'>
+                                   <div className='flex items-center gap-5'>
+                                        <Image className='rounded-full object-cover border-3 border-blue-500' height={60} width={60} src={user.image || '/user.png'} alt=''></Image>
+                                        <div>
+                                             <h1 className='text-xl font-semibold'>{user.name}</h1>
+                                             <p className='text-gray-400'>{user.email}</p>
+                                        </div>
+
+                                   </div>
+                              </div>:''
+                    }
+                    <NavLink href={'/'}><div className='flex items-center gap-2 border p-3 rounded-md border-gray-200'>
                          <FaHome />
                          <h1>Home</h1>
                     </div></NavLink>
-                    <NavLink href={'/allBooks'}><div className='flex items-center gap-2'>
+                    <NavLink href={'/allBooks'}><div className='flex items-center gap-2 border p-3 rounded-md border-gray-200'>
                          <FaBorderAll />
                          <h1>All Books</h1>
                     </div></NavLink>
-                    <NavLink href={'/myProfile'}><div className='flex items-center gap-2'>
+                    <NavLink href={'/myProfile'}><div className='flex items-center gap-2 border p-3 rounded-md border-gray-200'>
                          <FaUser />
                          <h1>My Profile</h1>
                     </div></NavLink>
                     {
-                         user ? <button onClick={handleLogout} className='btn md:hidden flex bg-red-500 text-white'>Logout<FiLogOut /></button> : <Link href={'/login'}><button className='btn w-full md:hidden flex bg-red-500 text-white'>Login<FiLogIn /></button></Link>
+                         user ? <button onClick={handleLogout} className='btn md:hidden flex bg-red-500 text-white'>Logout<FiLogOut /></button> : <Link href={'/login'}><button className='btn w-full md:hidden flex bg-green-500 text-white'>Login<FiLogIn /></button></Link>
                     }
 
                </div>
@@ -67,7 +80,7 @@ const Navbar = () => {
                </div>
                {
                     isPending ? <p>User is loading...</p> : user ?
-                         <div className='flex items-center gap-5'>
+                         <div className='md:flex items-center gap-5 hidden'>
                               <div className='flex items-center gap-3'>
                                    <Image className='rounded-full object-cover' height={30} width={30} src={user.image || '/user.png'} alt=''></Image>
                                    <div>
@@ -75,9 +88,9 @@ const Navbar = () => {
                                    </div>
                                    
                               </div>
-                              <button onClick={handleLogout} className='btn hidden md:flex bg-[#4F46E5] text-white'>Logout<FiLogOut/></button>
+                              <button onClick={handleLogout} className='btn hidden md:flex bg-red-500 text-white'>Logout<FiLogOut/></button>
                          </div>
-                         : <Link href={'/login'}><button className='btn hidden md:flex bg-[#4F46E5] text-white'>Login<FiLogIn /></button></Link> 
+                         : <Link href={'/login'}><button className='btn hidden md:flex bg-green-500 text-white'>Login<FiLogIn /></button></Link> 
                }
           </div>
      );

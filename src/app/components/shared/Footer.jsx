@@ -12,7 +12,7 @@ const Footer = () => {
                <div className='max-w-7xl mx-auto px-5 lg:px-0'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                          <div>
-                              <Image height={300} width={2000} className='h-8 w-38' src='/booknest-01.png' alt=''></Image>
+                              <Image height={300} width={2000} className='h-8 w-38' src='/footerLogo-01.png' alt=''></Image>
                               <p className='text-white/70 pt-5'>BookNest is your digital library companion. Discover, borrow and enjoy books like never before.</p>
                               <div className='flex items-center gap-2 mt-5'>
                                    <div className='bg-white/20 p-2 rounded-full'>

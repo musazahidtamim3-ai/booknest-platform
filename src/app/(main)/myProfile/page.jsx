@@ -29,10 +29,10 @@ const MyProfile = () => {
           <div className="max-w-7xl mx-auto my-10 px-5 lg:px-0">
                <div className="flex justify-between items-center mb-3">
                     <div>
-                         <h1 className="text-2xl font-bold pb-1">My Profile</h1>
+                         <h1 className="text-2xl font-bold pb-1">Update Profile</h1>
                          <p className="pb-3 text-gray-400">View and manage your account information</p>
                          </div>
-                    <Link href={'/updatProfile'} className="btn bg-blue-50 text-blue-500 border border-blue-500 flex items-center gap-3"><FaUserEdit /> Edit Profile</Link>
+                    <Link href={'/updatProfile'} className="btn bg-blue-50 text-blue-500 border border-blue-500 flex items-center gap-3"><FaUserEdit /> Update Profile</Link>
                          
                     </div>
                <div className="bg-white border border-blue-200 shadow-md rounded-md p-10">

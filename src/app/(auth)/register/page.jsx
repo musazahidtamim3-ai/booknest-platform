@@ -2,11 +2,18 @@
 import { authClient } from '@/lib/auth-client';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
+import { FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
+import "animate.css"
 
 const registerPage = () => {
      const { register, handleSubmit, formState: { errors } } = useForm()
      const router = useRouter()
+     const googleSignIn = async() => {
+               const data = await authClient.signIn.social({
+                    provider: "google",
+               });
+          }
      const registerFunc = async(data) => {
           const { name, image, email, password } = data
           const { data: res, error } = await authClient.signUp.email({
@@ -25,11 +32,11 @@ const registerPage = () => {
      }
      return (
           <div>
-               <div className='flex items-center justify-center min-h-screen px-5 lg:px-0'>
+               <div className='flex items-center my-10 justify-center min-h-screen px-5 lg:px-0 animate__animated animate__fadeInDown'>
                     <form onSubmit={handleSubmit(registerFunc)}>
 
                          <fieldset className="fieldset bg-base-100 border-base-300 rounded-box border p-10 w-sm lg:w-xl shadow-md">
-                              <h1 className='text-3xl text-center'>Welcome Back!</h1>
+                              <h1 className='text-3xl text-center font-semibold'>Welcome Back!</h1>
                               <p className='text-[13px] max-w-90 text-center mx-auto text-gray-400 pb-5'>Create your account and meet a important library of books</p>
 
                               <label className="label text-[13px]">Name</label>
@@ -49,6 +56,12 @@ const registerPage = () => {
                               {errors.password && <span className='text-red-500'>This field is required</span>}
 
                               <button className="btn btn-primary mt-4">Register</button>
+                              <div className="divider"><p className='text-gray-400'>OR</p></div>
+                                                       <button type='button' onClick={googleSignIn} className="btn flex gap-3 bg-white text-blue-500 border-blue-500">
+                                                            <FaGoogle />
+                                                            Login with Google
+                                                       </button>
+                                                       
                          </fieldset>
                     </form>
                </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { FaArrowLeft } from "react-icons/fa";
+import { MdSave } from "react-icons/md";
 import { toast } from "react-toastify";
 
 
@@ -40,7 +41,7 @@ const UpdateProfilePage = () => {
      }
      
      return (
-          <div className="max-w-7xl mx-auto my-10 px-5 lg:px-0">
+          <div className="max-w-3xl mx-auto my-10 px-5 lg:px-0">
                <div className="my-3">
                     <Link href={'/myProfile'} className="text-blue-500 flex items-center gap-3 pb-3"><FaArrowLeft />Back to Profile </Link>
                     <h1 className="text-2xl font-bold pb-1">Update Profile</h1>
@@ -63,7 +64,7 @@ const UpdateProfilePage = () => {
                               <input type="text" className="input w-full" placeholder="Paste your image url" {...register("image", { required: true })} />
                               {errors.image && <span className='text-red-500'>This field is required</span>}
 
-                              <button type="submit" className="btn btn-primary mt-4 w-full">Update Information</button>
+                              <button type="submit" className="btn btn-primary mt-4 w-full"><MdSave/> Update Information</button>
                          </fieldset>
                     </form>
                </div>
