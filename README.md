@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 BookNest - Online Book Library Platform
 
-## Getting Started
+**BookNest** is a comprehensive book management and borrowing platform where users can explore a vast collection of books, read descriptions, and manage their borrowing activities seamlessly.
 
-First, run the development server:
+## 🔗 Live URL
+[Live Site Link](https://booknest-platform.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Purpose
+The primary goal of **BookNest** is to provide a user-friendly interface for book enthusiasts to discover new reads and manage book borrowing. It aims to simplify the process of library management by providing digital access to book details, ratings, and real-time borrowing status.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
+- **Dynamic Book Exploration:** Users can view books by category and see detailed information including author, ratings, and descriptions.
+- **Secure Authentication:** Integrated with `Better Auth` for secure email/password and Google/GitHub social logins.
+- **Book Borrowing System:** Users can borrow books easily.
+- **Interactive UI:** Smooth animations using `Animate.css` and responsive design for mobile, tablet, and desktop.
+- **Real-time Search & Filtering:** Find books quickly by title or category.
+- **Personal Dashboard:** Users can see their borrowed books and manage their profiles.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Technology Stack & NPM Packages Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Core Framework:
+- **Next.js** (App Router)
+- **React.js**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Styling & Animations:
+- **Tailwind CSS** (Utility-first styling)
+- **DaisyUI** (UI Components)
+- **Animate.css** (Animations)
+- **React Icons** (Iconography)
 
-## Deploy on Vercel
+### Authentication:
+- **Better Auth** (User authentication and session management)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Database & Backend:
+- **MongoDB** (Database)
+- **MongoDB Adapter for Better Auth**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Forms & Notifications:
+- **React Hook Form** (Form handling)
+- **React Toastify** (Dynamic notifications/toasts)
